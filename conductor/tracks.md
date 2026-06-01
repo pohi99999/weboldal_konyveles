@@ -4,5 +4,5 @@ This file tracks all major tracks for the project. Each track has its own detail
 
 ---
 
-- [~] **Track: Weboldal alapstruktúra és MVP felépítése**
+- [x] **Track: Weboldal alapstruktúra és MVP felépítése**
   *Link: [./tracks/mvp_build_20260601/](./tracks/mvp_build_20260601/)*
