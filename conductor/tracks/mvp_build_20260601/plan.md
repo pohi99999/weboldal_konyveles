@@ -25,8 +25,8 @@
 - [x] Task: Conductor - User Manual Verification 'Phase 3: Főoldali Szekciók (MVP)' (Protocol in workflow.md) (f90f165)
 
 ## Phase 4: Kapcsolati Űrlap és Backend
-- [~] Task: Kapcsolati Űrlap UI
-    - [ ] Név, Email, Telefon, Üzenet mezők létrehozása.
-- [ ] Task: Server Action implementálása
+- [x] Task: Kapcsolati Űrlap UI (a4261c5)
+    - [x] Név, Email, Telefon, Üzenet mezők létrehozása.
+- [~] Task: Server Action implementálása
     - [ ] Űrlap adatainak fogadása és validálása.
 - [ ] Task: Conductor - User Manual Verification 'Phase 4: Kapcsolati Űrlap és Backend' (Protocol in workflow.md)
