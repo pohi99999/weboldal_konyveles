@@ -36,3 +36,14 @@ test('Home page renders About section', () => {
   expect(screen.getAllByText(/Pohánka Józsefné/i).length).toBeGreaterThan(0)
 })
 
+test('Home page renders Contact section with form', () => {
+  render(<Home />)
+  expect(screen.getByRole('heading', { name: /Kapcsolat/i, level: 2 })).toBeDefined()
+  expect(screen.getByLabelText(/Név/i)).toBeDefined()
+  expect(screen.getByLabelText(/E-mail/i)).toBeDefined()
+  expect(screen.getByLabelText(/Telefon/i)).toBeDefined()
+  expect(screen.getByLabelText(/Üzenet/i)).toBeDefined()
+  expect(screen.getByRole('button', { name: /Küldés/i })).toBeDefined()
+})
+
+

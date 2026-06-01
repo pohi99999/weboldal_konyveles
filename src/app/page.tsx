@@ -89,6 +89,73 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* Contact Section */}
+      <section id="contact" className="w-full py-24 px-6 bg-white border-t border-zinc-100">
+        <div className="max-w-3xl mx-auto">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold text-zinc-900">Kapcsolat</h2>
+            <p className="text-zinc-600 mt-4">Kérjen egyedi ajánlatot, vagy tegye fel kérdéseit bizalommal!</p>
+          </div>
+          
+          <form className="flex flex-col gap-6 bg-zinc-50 p-8 rounded-2xl border border-zinc-100 shadow-sm">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div className="flex flex-col gap-2">
+                <label htmlFor="name" className="text-sm font-semibold text-zinc-900">Név</label>
+                <input 
+                  type="text" 
+                  id="name" 
+                  name="name" 
+                  required 
+                  className="px-4 py-3 rounded-lg border border-zinc-200 focus:outline-none focus:ring-2 focus:ring-blue-500 bg-white"
+                  placeholder="Kovács János"
+                />
+              </div>
+              <div className="flex flex-col gap-2">
+                <label htmlFor="email" className="text-sm font-semibold text-zinc-900">E-mail cím</label>
+                <input 
+                  type="email" 
+                  id="email" 
+                  name="email" 
+                  required 
+                  className="px-4 py-3 rounded-lg border border-zinc-200 focus:outline-none focus:ring-2 focus:ring-blue-500 bg-white"
+                  placeholder="kovacs@cege.hu"
+                />
+              </div>
+            </div>
+            
+            <div className="flex flex-col gap-2">
+              <label htmlFor="phone" className="text-sm font-semibold text-zinc-900">Telefon</label>
+              <input 
+                type="tel" 
+                id="phone" 
+                name="phone" 
+                className="px-4 py-3 rounded-lg border border-zinc-200 focus:outline-none focus:ring-2 focus:ring-blue-500 bg-white"
+                placeholder="+36 30 123 4567"
+              />
+            </div>
+            
+            <div className="flex flex-col gap-2">
+              <label htmlFor="message" className="text-sm font-semibold text-zinc-900">Üzenet</label>
+              <textarea 
+                id="message" 
+                name="message" 
+                required 
+                rows={4}
+                className="px-4 py-3 rounded-lg border border-zinc-200 focus:outline-none focus:ring-2 focus:ring-blue-500 bg-white resize-none"
+                placeholder="Miben segíthetünk?"
+              ></textarea>
+            </div>
+            
+            <button 
+              type="submit" 
+              className="mt-2 bg-blue-600 hover:bg-blue-700 text-white font-semibold py-4 px-8 rounded-lg transition-colors shadow-sm w-full md:w-auto self-end"
+            >
+              Küldés
+            </button>
+          </form>
+        </div>
+      </section>
     </div>
   );
 }
