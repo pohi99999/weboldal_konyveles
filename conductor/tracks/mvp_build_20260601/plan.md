@@ -9,7 +9,7 @@
 - [x] Task: Conductor - User Manual Verification 'Phase 1: Projekt inicializálása' (Protocol in workflow.md) (efe7849)
 
 ## Phase 2: UI komponensek és Layout
-- [ ] Task: Fő layout és navigáció kialakítása
+- [~] Task: Fő layout és navigáció kialakítása
     - [ ] Hozz létre egy Header (navigáció) komponenst.
     - [ ] Hozz létre egy Footer komponenst.
     - [ ] Integráld a layout.tsx-be.
