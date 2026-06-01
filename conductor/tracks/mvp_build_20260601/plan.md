@@ -8,12 +8,12 @@
     - [x] Hozz létre `components`, `lib`, és `app` mappákat.
 - [x] Task: Conductor - User Manual Verification 'Phase 1: Projekt inicializálása' (Protocol in workflow.md) (efe7849)
 
-## Phase 2: UI komponensek és Layout
-- [x] Task: Fő layout és navigáció kialakítása (72547d6)
+## Phase 2: UI komponensek és Layout [checkpoint: d34547e]
+- [x] Task: Fő layout és navigáció kialakítása (89d10c2)
     - [x] Hozz létre egy Header (navigáció) komponenst.
     - [x] Hozz létre egy Footer komponenst.
     - [x] Integráld a layout.tsx-be.
-- [ ] Task: Conductor - User Manual Verification 'Phase 2: UI komponensek és Layout' (Protocol in workflow.md)
+- [x] Task: Conductor - User Manual Verification 'Phase 2: UI komponensek és Layout' (Protocol in workflow.md) (d34547e)
 
 ## Phase 3: Főoldali Szekciók (MVP)
 - [ ] Task: Hero Szekció implementálása
