@@ -11,7 +11,8 @@ vi.mock('next/image', () => ({
   },
 }))
 
-test('Home page renders with welcome text', () => {
+test('Home page renders Hero section', () => {
   render(<Home />)
-  expect(screen.getByText(/To get started, edit the page.tsx file/i)).toBeDefined()
+  expect(screen.getByText(/Profi Könyvelés és Adótanácsadás/i)).toBeDefined()
+  expect(screen.getByText(/Kérjen ajánlatot/i)).toBeDefined()
 })
