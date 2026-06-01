@@ -16,9 +16,9 @@
 - [x] Task: Conductor - User Manual Verification 'Phase 2: UI komponensek és Layout' (Protocol in workflow.md) (d34547e)
 
 ## Phase 3: Főoldali Szekciók (MVP)
-- [~] Task: Hero Szekció implementálása
-    - [ ] CTA gombok és értékajánlat szöveg.
-- [ ] Task: Szolgáltatások szekció
+- [x] Task: Hero Szekció implementálása (0d9ef74)
+    - [x] CTA gombok és értékajánlat szöveg.
+- [~] Task: Szolgáltatások szekció
     - [ ] Kártyás elrendezés a szolgáltatásoknak.
 - [ ] Task: Rólunk szekció
     - [ ] Kép és bemutatkozó szöveg komponens.

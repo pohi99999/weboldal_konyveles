@@ -1,4 +1,22 @@
 export default function Home() {
+  const services = [
+    {
+      title: "Teljes körű könyvelés",
+      description: "Precíz, naprakész könyvelés, hogy Ön nyugodtan koncentrálhasson vállalkozására.",
+      icon: "📊"
+    },
+    {
+      title: "Bérszámfejtés",
+      description: "Munkavállalók bérszámfejtése, TB ügyintézés, bevallások pontos és időbeni elkészítése.",
+      icon: "👥"
+    },
+    {
+      title: "Adótanácsadás",
+      description: "Személyre szabott adózási stratégiák és optimalizálás a jogszabályoknak megfelelően.",
+      icon: "💡"
+    }
+  ];
+
   return (
     <div className="flex flex-col flex-1 w-full">
       {/* Hero Section */}
@@ -23,6 +41,29 @@ export default function Home() {
             >
               Szolgáltatásaink
             </a>
+          </div>
+        </div>
+      </section>
+
+      {/* Services Section */}
+      <section id="services" className="w-full py-20 px-6 bg-white">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl font-bold text-zinc-900">Kiemelt Szolgáltatásaink</h2>
+            <p className="text-zinc-600 mt-4 max-w-2xl mx-auto">
+              Átfogó megoldásokat kínálunk, hogy vállalkozása pénzügyei mindig rendben legyenek.
+            </p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {services.map((service, index) => (
+              <div key={index} className="p-8 rounded-2xl bg-zinc-50 border border-zinc-100 shadow-sm hover:shadow-md transition-shadow">
+                <div className="text-4xl mb-4">{service.icon}</div>
+                <h3 className="text-xl font-bold text-zinc-900 mb-3">{service.title}</h3>
+                <p className="text-zinc-600 leading-relaxed">
+                  {service.description}
+                </p>
+              </div>
+            ))}
           </div>
         </div>
       </section>
