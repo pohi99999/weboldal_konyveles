@@ -15,14 +15,14 @@
     - [x] Integráld a layout.tsx-be.
 - [x] Task: Conductor - User Manual Verification 'Phase 2: UI komponensek és Layout' (Protocol in workflow.md) (d34547e)
 
-## Phase 3: Főoldali Szekciók (MVP)
+## Phase 3: Főoldali Szekciók (MVP) [checkpoint: f90f165]
 - [x] Task: Hero Szekció implementálása (0d9ef74)
     - [x] CTA gombok és értékajánlat szöveg.
 - [x] Task: Szolgáltatások szekció (7d651ed)
     - [x] Kártyás elrendezés a szolgáltatásoknak.
-- [~] Task: Rólunk szekció
-    - [ ] Kép és bemutatkozó szöveg komponens.
-- [ ] Task: Conductor - User Manual Verification 'Phase 3: Főoldali Szekciók (MVP)' (Protocol in workflow.md)
+- [x] Task: Rólunk szekció (e4b3637)
+    - [x] Kép és bemutatkozó szöveg komponens.
+- [x] Task: Conductor - User Manual Verification 'Phase 3: Főoldali Szekciók (MVP)' (Protocol in workflow.md) (f90f165)
 
 ## Phase 4: Kapcsolati Űrlap és Backend
 - [ ] Task: Kapcsolati Űrlap UI
