@@ -18,9 +18,9 @@
 ## Phase 3: Főoldali Szekciók (MVP)
 - [x] Task: Hero Szekció implementálása (0d9ef74)
     - [x] CTA gombok és értékajánlat szöveg.
-- [~] Task: Szolgáltatások szekció
-    - [ ] Kártyás elrendezés a szolgáltatásoknak.
-- [ ] Task: Rólunk szekció
+- [x] Task: Szolgáltatások szekció (7d651ed)
+    - [x] Kártyás elrendezés a szolgáltatásoknak.
+- [~] Task: Rólunk szekció
     - [ ] Kép és bemutatkozó szöveg komponens.
 - [ ] Task: Conductor - User Manual Verification 'Phase 3: Főoldali Szekciók (MVP)' (Protocol in workflow.md)
 

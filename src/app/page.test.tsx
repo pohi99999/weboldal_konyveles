@@ -29,3 +29,10 @@ test('Home page renders Services section', () => {
   expect(screen.getByRole('heading', { name: /Bérszámfejtés/i, level: 3 })).toBeDefined()
   expect(screen.getByRole('heading', { name: /Adótanácsadás/i, level: 3 })).toBeDefined()
 })
+
+test('Home page renders About section', () => {
+  render(<Home />)
+  expect(screen.getByRole('heading', { name: /Rólunk/i, level: 2 })).toBeDefined()
+  expect(screen.getAllByText(/Pohánka Józsefné/i).length).toBeGreaterThan(0)
+})
+

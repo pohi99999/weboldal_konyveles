@@ -67,6 +67,28 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* About Section */}
+      <section id="about" className="w-full py-24 px-6 bg-zinc-50 border-t border-zinc-100">
+        <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-12">
+          <div className="w-32 h-32 md:w-48 md:h-48 rounded-full bg-zinc-200 flex items-center justify-center text-zinc-400 shrink-0 overflow-hidden shadow-inner">
+            <span className="text-4xl md:text-6xl">👤</span>
+          </div>
+          <div className="flex-1 text-center md:text-left">
+            <h2 className="text-3xl font-bold text-zinc-900 mb-6">Rólunk: Pohánka Józsefné</h2>
+            <div className="space-y-4 text-zinc-600 leading-relaxed">
+              <p>
+                Több évtizedes szakmai tapasztalattal rendelkező, regisztrált mérlegképes könyvelőként
+                fő célom, hogy ügyfeleim számára átlátható, pontos és megbízható számviteli hátteret biztosítsak.
+              </p>
+              <p>
+                A Pohánka és Társa Kft. keretein belül nem csupán az adatok rögzítésével foglalkozunk, hanem
+                aktív, személyre szabott adótanácsadással is támogatjuk a vállalkozások növekedését és biztonságát.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }
