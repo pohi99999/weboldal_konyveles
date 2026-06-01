@@ -1,10 +1,10 @@
 # Implementation Plan: Weboldal alapstruktúra és MVP felépítése
 
 ## Phase 1: Projekt inicializálása
-- [~] Task: Next.js projekt létrehozása Tailwind CSS-sel
-    - [ ] Run `npx create-next-app@latest .` with Tailwind and TypeScript.
-    - [ ] Configure `next.config.ts`.
-- [ ] Task: Alapvető mappaszerkezet kialakítása
+- [x] Task: Next.js projekt létrehozása Tailwind CSS-sel (15aa283)
+    - [x] Run `npx create-next-app@latest .` with Tailwind and TypeScript.
+    - [x] Configure `next.config.ts`.
+- [~] Task: Alapvető mappaszerkezet kialakítása
     - [ ] Hozz létre `components`, `lib`, és `app` mappákat.
 - [ ] Task: Conductor - User Manual Verification 'Phase 1: Projekt inicializálása' (Protocol in workflow.md)
 
