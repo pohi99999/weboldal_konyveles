@@ -12,38 +12,38 @@ vi.mock('next/image', () => ({
   __esModule: true,
   default: (props: any) => {
     // eslint-disable-next-line @next/next/no-img-element
-    return <img {...props} />
+    return <img {...props} fill={props.fill ? "true" : undefined} priority={props.priority ? "true" : undefined} />
   },
 }))
 
 test('Home page renders Hero section', () => {
   render(<Home />)
-  expect(screen.getByText(/Profi Könyvelés és Adótanácsadás/i)).toBeDefined()
+  expect(screen.getByText(/Precíz könyvelés/i)).toBeDefined()
+  expect(screen.getByText(/nyugodt vállalkozás/i)).toBeDefined()
   expect(screen.getByText(/Kérjen ajánlatot/i)).toBeDefined()
 })
 
 test('Home page renders Services section', () => {
   render(<Home />)
-  expect(screen.getByRole('heading', { name: /Kiemelt Szolgáltatásaink/i, level: 2 })).toBeDefined()
-  expect(screen.getByRole('heading', { name: /Teljes körű könyvelés/i, level: 3 })).toBeDefined()
-  expect(screen.getByRole('heading', { name: /Bérszámfejtés/i, level: 3 })).toBeDefined()
-  expect(screen.getByRole('heading', { name: /Adótanácsadás/i, level: 3 })).toBeDefined()
+  expect(screen.getByRole('heading', { name: /Mivel foglalkozunk\?/i, level: 2 })).toBeDefined()
+  expect(screen.getByRole('heading', { name: /Teljes körű könyvelés/i, level: 4 })).toBeDefined()
+  expect(screen.getByRole('heading', { name: /Bérszámfejtés/i, level: 4 })).toBeDefined()
+  expect(screen.getByRole('heading', { name: /Adótanácsadás/i, level: 4 })).toBeDefined()
 })
 
 test('Home page renders About section', () => {
   render(<Home />)
-  expect(screen.getByRole('heading', { name: /Rólunk/i, level: 2 })).toBeDefined()
+  expect(screen.getByRole('heading', { name: /A szakmai háttér/i, level: 2 })).toBeDefined()
   expect(screen.getAllByText(/Pohánka Józsefné/i).length).toBeGreaterThan(0)
+  expect(screen.getByAltText(/Pohánka Józsefné/i)).toBeDefined()
 })
 
 test('Home page renders Contact section with form', () => {
   render(<Home />)
-  expect(screen.getByRole('heading', { name: /Kapcsolat/i, level: 2 })).toBeDefined()
+  expect(screen.getByRole('heading', { name: /Kapcsolatfelvétel/i, level: 2 })).toBeDefined()
   expect(screen.getByLabelText(/Név/i)).toBeDefined()
   expect(screen.getByLabelText(/E-mail/i)).toBeDefined()
   expect(screen.getByLabelText(/Telefon/i)).toBeDefined()
   expect(screen.getByLabelText(/Üzenet/i)).toBeDefined()
-  expect(screen.getByRole('button', { name: /Küldés/i })).toBeDefined()
+  expect(screen.getByRole('button', { name: /Üzenet küldése/i })).toBeDefined()
 })
-
-

@@ -1,4 +1,24 @@
+import Image from 'next/image';
+
 export default function Home() {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "AccountingService",
+    "name": "Pohánka és Társa Kft. - Könyvelés",
+    "description": "Profi könyvelési szolgáltatások, bérszámfejtés és adótanácsadás.",
+    "url": "https://konyveles.pohankaestarsa.com",
+    "telephone": "+36 (szám helye)",
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "HU"
+    },
+    "founder": {
+      "@type": "Person",
+      "name": "Pohánka Józsefné"
+    },
+    "serviceType": ["Könyvelés", "Bérszámfejtés", "Adótanácsadás"]
+  };
+
   const services = [
     {
       title: "Teljes körű könyvelés",
@@ -104,8 +124,15 @@ export default function Home() {
           <div className="relative lg:w-1/2">
             <div className="absolute -top-10 -left-10 w-40 h-40 bg-blue-50 rounded-full -z-10" />
             <div className="absolute -bottom-10 -right-10 w-60 h-60 bg-slate-50 rounded-full -z-10" />
-            <div className="aspect-[4/5] w-full max-w-md mx-auto rounded-[2rem] bg-slate-100 flex items-center justify-center text-slate-300 shadow-2xl overflow-hidden grayscale hover:grayscale-0 transition-all duration-700">
-              <span className="text-9xl">👤</span>
+            <div className="relative aspect-[4/5] w-full max-w-md mx-auto rounded-[2rem] shadow-2xl overflow-hidden group">
+              <Image 
+                src="/profil.jpeg" 
+                alt="Pohánka Józsefné" 
+                fill 
+                className="object-cover grayscale group-hover:grayscale-0 transition-all duration-700"
+                sizes="(max-width: 768px) 100vw, 50vw"
+                priority
+              />
             </div>
             <div className="absolute bottom-10 -right-4 bg-white p-6 rounded-2xl shadow-xl border border-slate-100 hidden md:block">
               <p className="text-3xl font-serif font-bold text-slate-900">25+</p>
@@ -185,22 +212,6 @@ export default function Home() {
                 rows={4}
                 className="px-6 py-4 rounded-2xl bg-white/5 border border-white/10 focus:border-blue-500 focus:outline-none focus:ring-1 focus:ring-blue-500 text-white transition-all resize-none"
                 placeholder="Miben segíthetünk?"
-              ></textarea>
-            </div>
-            
-            <button 
-              type="submit" 
-              className="mt-4 bg-blue-600 hover:bg-blue-500 text-white font-bold py-5 px-12 rounded-2xl transition-all shadow-xl shadow-blue-600/20 active:scale-95 w-full md:w-max md:self-center"
-            >
-              Üzenet küldése
-            </button>
-          </form>
-        </div>
-      </section>
-    </div>
-  );
-}
-egíthetünk?"
               ></textarea>
             </div>
             
