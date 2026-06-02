@@ -18,11 +18,11 @@
 - [ ] Task: Conductor - User Manual Verification 'Phase 2: Technikai SEO'
 
 ## Phase 3: Teljesítmény Optimalizálás
-- [ ] Task: Képek és betűtípusok felülvizsgálata
-    - [ ] Biztosítsd a `next/image` használatát mindenhol.
-    - [ ] Optimalizáld a betűtípusok betöltését.
-- [ ] Task: Core Web Vitals és LCP javítások
-    - [ ] Ellenőrizd a Largest Contentful Paint elemet és optimalizáld (pl. priority flag).
+- [x] Task: Képek és betűtípusok felülvizsgálata (2f7466b)
+    - [x] Biztosítsd a `next/image` használatát mindenhol.
+    - [x] Optimalizáld a betűtípusok betöltését.
+- [x] Task: Core Web Vitals és LCP javítások (76c8d1a)
+    - [x] Ellenőrizd a Largest Contentful Paint elemet és optimalizáld (pl. priority flag).
 - [ ] Task: Conductor - User Manual Verification 'Phase 3: Teljesítmény Optimalizálás'
 
 ## Phase 4: Audit és Validálás

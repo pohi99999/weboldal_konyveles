@@ -67,7 +67,7 @@ export default function Home() {
           <span className="inline-block px-4 py-1.5 bg-blue-500/10 text-blue-400 border border-blue-500/20 rounded-full text-xs font-bold uppercase tracking-widest">
             Szakértelem & Megbízhatóság
           </span>
-          <h1 className="text-4xl md:text-7xl font-serif font-bold tracking-tight text-white max-w-4xl leading-[1.1]">
+          <h1 className="text-4xl md:text-7xl font-serif font-bold tracking-tight text-white max-w-4xl leading-[1.1] animate-in fade-in slide-in-from-bottom-4 duration-1000">
             Precíz könyvelés,<br /> <span className="text-blue-400 italic">nyugodt vállalkozás.</span>
           </h1>
           <p className="text-lg md:text-xl text-slate-300 max-w-2xl leading-relaxed">
