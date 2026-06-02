@@ -2,8 +2,8 @@ import { expect, test, vi } from 'vitest'
 
 // Mock components that might be used
 vi.mock('next/font/google', () => ({
-  Geist: () => ({ variable: '--font-geist-sans' }),
-  Geist_Mono: () => ({ variable: '--font-geist-mono' }),
+  Inter: () => ({ variable: '--font-inter' }),
+  Playfair_Display: () => ({ variable: '--font-playfair' }),
 }))
 
 import { metadata as layoutMetadata } from './layout'

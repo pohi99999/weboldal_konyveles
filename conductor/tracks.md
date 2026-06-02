@@ -7,8 +7,8 @@ This file tracks all major tracks for the project. Each track has its own detail
 - [x] **Track: Weboldal alapstruktúra és MVP felépítése**
   *Link: [./tracks/mvp_build_20260601/](./tracks/mvp_build_20260601/)*
 
-- [ ] **Track: SEO és Teljesítmény optimalizálás**
-  *Vár kidolgozásra*
+- [x] **Track: SEO és Teljesítmény optimalizálás**
+  *Link: [./tracks/seo_performance_20260602/](./tracks/seo_performance_20260602/)*
 
 - [ ] **Track: UI/UX finomhangolás és Reszponzivitás**
   *Vár kidolgozásra*

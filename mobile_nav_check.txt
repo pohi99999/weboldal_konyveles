@@ -1,0 +1,7 @@
+uid=4_0 RootWebArea "MCP Brunella Core - AI Irányítópult" url="http://localhost:3000/"
+  uid=4_1 heading "Brunella" level="1"
+  uid=4_2 StaticText "DASHBOARD INDÍTÁSI FOLYAMAT"
+  uid=4_3 StaticText "MUNKATERÜLET ELŐKÉSZÍTÉSE"
+  uid=4_4 StaticText "100"
+  uid=4_5 StaticText "%"
+  uid=4_6 StaticText "KÉSZ"

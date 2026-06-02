@@ -12,16 +12,21 @@ A Pohánka és Társa Kft. jelenlegi weboldala (pohankaestarsa.com) elsősorban 
 
 ## Állapot
 - A projekt alapstruktúrája elkészült.
-- Az MVP (Minimum Viable Product) UI elkészült (Hero szekció, Szolgáltatások, Rólunk, Kapcsolat).
-- A Server Action a kapcsolati űrlaphoz implementálva lett (mock).
-- A kód 100%-ban átment az alapvető teszteken.
+- Az MVP (Minimum Viable Product) UI elkészült és modernizálva lett (2026-os design trendek: Calm Authority, Glassmorphism).
+- A profilkép beillesztésre került és a tartalom személyesebbé, emberközelibbé vált.
+- A SEO és Teljesítmény optimalizálás track befejeződött (Metadata API, OpenGraph, Sitemap, Robots.txt, JSON-LD).
+- Valós elérhetőségi adatok integrálva.
+- A kód 100%-ban átment a teszteken.
 
 ## Fejlesztési Irányelvek
 - **TDD (Test-Driven Development):** Minden új funkcióhoz tesztet írunk a kódolás előtt.
 - **Folyamatos mentés és tesztelés:** `npm test` használata minden nagyobb változás után.
 - **Commit üzenetek:** Conventional Commits formátum használata (`feat:`, `fix:`, `chore:`, stb.).
 
+## Befejezett Trackek
+1. **Weboldal alapstruktúra és MVP felépítése** (2026.06.01)
+2. **SEO és Teljesítmény optimalizálás** (2026.06.02)
+
 ## Jövőbeli tervek (Következő Trackek)
-1. SEO és Teljesítmény optimalizálás (Meta tagek, sitemap, LCP javítások).
-2. UI/UX finomhangolás, Animációk és Mobil-első reszponzivitás ellenőrzése.
-3. Vercel deployment, Domain beállítás és élesítés (Production).
+1. UI/UX finomhangolás, Animációk és Mobil-első reszponzivitás ellenőrzése.
+2. Vercel deployment, Domain beállítás és élesítés (Production).

@@ -166,7 +166,18 @@ export default function Home() {
           <div className="text-center mb-16">
             <h2 className="text-sm font-bold text-blue-400 uppercase tracking-widest mb-3">Kapcsolatfelvétel</h2>
             <h3 className="text-3xl md:text-5xl font-serif font-bold text-white mb-6">Kérjen egyedi ajánlatot</h3>
-            <p className="text-slate-400 text-lg max-w-2xl mx-auto">Vegyük fel a kapcsolatot, és találjuk meg az Ön vállalkozásához legjobban illeszkedő könyvelési megoldásokat.</p>
+            <p className="text-slate-400 text-lg max-w-2xl mx-auto mb-8">Vegyük fel a kapcsolatot, és találjuk meg az Ön vállalkozásához legjobban illeszkedő könyvelési megoldásokat.</p>
+            <div className="flex flex-col md:flex-row items-center justify-center gap-8 text-white/80 text-sm font-medium">
+              <div className="flex items-center gap-2">
+                <span className="text-blue-400">📍</span> 8900 Zalaegerszeg, Kossuth Lajos u. 39.
+              </div>
+              <div className="flex items-center gap-2 text-blue-400 font-bold">
+                <span>📞</span> <a href="tel:+36204855420">+36 20 485 5420</a>
+              </div>
+              <div className="flex items-center gap-2">
+                <span className="text-blue-400">✉️</span> Piroska@sze-po.hu
+              </div>
+            </div>
           </div>
           
           <form className="grid grid-cols-1 gap-8 bg-white/5 backdrop-blur-xl p-8 md:p-12 rounded-[2.5rem] border border-white/10 shadow-2xl">
