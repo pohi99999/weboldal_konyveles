@@ -129,7 +129,7 @@ export default function Home() {
                 src="/profil.jpeg" 
                 alt="Pohánka Józsefné" 
                 fill 
-                className="object-cover grayscale group-hover:grayscale-0 transition-all duration-700"
+                className="object-cover transition-transform duration-700 group-hover:scale-105"
                 sizes="(max-width: 768px) 100vw, 50vw"
                 priority
               />
@@ -144,13 +144,13 @@ export default function Home() {
             <h3 className="text-3xl md:text-5xl font-serif font-bold text-slate-900 mb-8 leading-tight">Pohánka Józsefné<br /><span className="text-slate-400 font-normal italic">Mérlegképes könyvelő</span></h3>
             <div className="space-y-6 text-slate-600 text-lg leading-relaxed">
               <p>
-                Regisztrált mérlegképes könyvelőként több mint két évtizede segítem a hazai vállalkozásokat a jogszabályok útvesztőjében. Hiszem, hogy a könyvelés nem csupán adatrögzítés, hanem bizalmi feladat.
+                Több mint két évtizede nem csupán számokkal, hanem sorsokkal és vállalkozásokkal foglalkozom. Regisztrált mérlegképes könyvelőként pályafutásom alatt több száz cégnek – a legkisebb egyéni vállalkozóktól a nagyobb társaságokig – segítettem megtalálni a biztonságot a pénzügyekben.
               </p>
-              <p className="p-8 bg-slate-50 rounded-2xl border-l-4 border-slate-900 font-medium italic">
-                "Célom, hogy ügyfeleim minden pillanatban biztonságban érezzék cégük pénzügyeit, és proaktív tanácsokkal segítsem az adóoptimalizálást."
+              <p className="p-8 bg-slate-50 rounded-2xl border-l-4 border-blue-600 font-medium italic text-slate-800">
+                "Számomra minden ügyfél egyformán fontos. Nem csak adatokat rögzítek: a célom a vállalkozások védelme és egy olyan stabil háttér megteremtése, ahol Ön nyugodtan alhat, tudva, hogy cége pénzügyei a legjobb kezekben vannak."
               </p>
               <p>
-                A Pohánka és Társa Kft. családi vállalkozásként ötvözi a tradicionális szakmai alaposságot a modern technológiai megoldásokkal.
+                A Pohánka és Társa Kft. keretein belül azért dolgozom nap mint nap, hogy szakmai tudásommal és közvetlen, támogató hozzáállásommal segítsem az Ön vállalkozásának növekedését és stabilitását.
               </p>
             </div>
           </div>
