@@ -7,9 +7,12 @@ export default function Home() {
     "name": "Pohánka és Társa Kft. - Könyvelés",
     "description": "Profi könyvelési szolgáltatások, bérszámfejtés és adótanácsadás.",
     "url": "https://konyveles.pohankaestarsa.com",
-    "telephone": "+36 (szám helye)",
+    "telephone": "+36 20 485 5420",
     "address": {
       "@type": "PostalAddress",
+      "streetAddress": "Kossuth Lajos u. 39.",
+      "addressLocality": "Zalaegerszeg",
+      "postalCode": "8900",
       "addressCountry": "HU"
     },
     "founder": {

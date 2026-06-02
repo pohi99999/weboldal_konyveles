@@ -26,6 +26,6 @@
 - [ ] Task: Conductor - User Manual Verification 'Phase 3: Teljesítmény Optimalizálás'
 
 ## Phase 4: Audit és Validálás
-- [ ] Task: Lighthouse audit futtatása és hibák javítása
-- [ ] Task: Mobil reszponzivitás és sebesség ellenőrzése
-- [ ] Task: Conductor - User Manual Verification 'Phase 4: Audit és Validálás'
+- [x] Task: Lighthouse audit futtatása és hibák javítása (02d1d1c)
+- [x] Task: Mobil reszponzivitás és sebesség ellenőrzése (2f7466b)
+- [x] Task: Conductor - User Manual Verification 'Phase 4: Audit és Validálás' (7d632f2)
