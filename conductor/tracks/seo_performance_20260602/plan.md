@@ -9,12 +9,12 @@
 - [ ] Task: Conductor - User Manual Verification 'Phase 1: Meta adatok és Alap SEO'
 
 ## Phase 2: Technikai SEO (Sitemap & Robots)
-- [ ] Task: Sitemap generálás implementálása
-    - [ ] Hozz létre `app/sitemap.ts` fájlt.
-- [ ] Task: Robots.txt konfigurálása
-    - [ ] Hozz létre `app/robots.ts` fájlt.
-- [ ] Task: Strukturált adatok (JSON-LD) hozzáadása
-    - [ ] Implementálj LocalBusiness sémát a főoldalon.
+- [x] Task: Sitemap generálás implementálása (b8a9c2d)
+    - [x] Hozz létre `app/sitemap.ts` fájlt.
+- [x] Task: Robots.txt konfigurálása (b8a9c2d)
+    - [x] Hozz létre `app/robots.ts` fájlt.
+- [x] Task: Strukturált adatok (JSON-LD) hozzáadása (b8a9c2d)
+    - [x] Implementálj LocalBusiness sémát a főoldalon.
 - [ ] Task: Conductor - User Manual Verification 'Phase 2: Technikai SEO'
 
 ## Phase 3: Teljesítmény Optimalizálás
