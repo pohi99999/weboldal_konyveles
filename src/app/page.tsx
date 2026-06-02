@@ -124,7 +124,7 @@ export default function Home() {
       {/* About Section */}
       <section id="about" className="w-full py-32 px-6 bg-white overflow-hidden">
         <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-20">
-          <div className="relative lg:w-1/2">
+          <div className="relative w-full lg:w-1/2">
             <div className="absolute -top-10 -left-10 w-40 h-40 bg-blue-50 rounded-full -z-10" />
             <div className="absolute -bottom-10 -right-10 w-60 h-60 bg-slate-50 rounded-full -z-10" />
             <div className="relative aspect-[4/5] w-full max-w-md mx-auto rounded-[2rem] shadow-2xl overflow-hidden group">
