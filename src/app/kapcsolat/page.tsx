@@ -47,13 +47,16 @@ export default function ContactPage() {
                 </div>
               </div>
 
-              {/* Map Placeholder */}
-              <div className="aspect-video w-full bg-slate-100 rounded-[2rem] flex items-center justify-center border border-slate-200 shadow-inner overflow-hidden relative group">
-                <div className="text-center p-8">
-                  <p className="text-slate-400 font-medium mb-2">Interaktív térkép helye</p>
-                  <p className="text-sm text-slate-400">8900 Zalaegerszeg, Kossuth Lajos u. 39.</p>
-                </div>
-                <div className="absolute inset-0 bg-blue-600/5 group-hover:bg-transparent transition-colors" />
+              {/* Google Maps Integration */}
+              <div className="aspect-video w-full bg-slate-100 rounded-[2rem] border border-slate-200 shadow-xl overflow-hidden relative">
+                <iframe 
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2726.657384918738!2d16.840788676884617!3d46.84450174057864!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4769260667e69f83%3A0xc3c54d1d91834925!2sZalaegerszeg%2C%20Kossuth%20Lajos%20u.%2039%2C%208900!5e0!3m2!1shu!2shu!4v1717430000000!5m2!1shu!2shu"
+                  className="absolute inset-0 w-full h-full border-0"
+                  allowFullScreen
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  title="Pohánka és Társa Kft. Iroda helyszíne"
+                ></iframe>
               </div>
             </div>
 
