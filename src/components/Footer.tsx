@@ -48,6 +48,15 @@ export default function Footer() {
             </ul>
           </div>
         </div>
+
+        {/* AI Services Link */}
+        <div className="mb-12 p-8 rounded-[2rem] bg-blue-600/5 border border-blue-500/10 backdrop-blur-sm">
+          <p className="text-slate-300 text-sm md:text-base leading-relaxed text-center">
+            Ha az <strong>AI ügynöki</strong> és <strong>mesterséges intelligencia rendszerek</strong> érdeklik, melyeket Vállalkozására szabunk, látogasson el cégünk fejlesztői oldalára: 
+            <a href="https://www.pohankaestarsa.com/" className="inline-block ml-2 text-blue-400 hover:text-blue-300 font-bold transition-colors">www.pohankaestarsa.com</a>
+          </p>
+        </div>
+
         <div className="pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4 text-xs font-bold uppercase tracking-widest text-slate-500">
           <p>© {new Date().getFullYear()} Pohánka és Társa Kft. Minden jog fenntartva.</p>
           <p>Készítette: <a href="https://www.pohankaestarsa.com/" className="text-slate-300 hover:text-blue-400 transition-colors">pohankaestarsa.com</a></p>
