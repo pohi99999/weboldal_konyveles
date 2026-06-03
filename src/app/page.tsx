@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function Home() {
   const jsonLd = {
@@ -25,6 +26,7 @@ export default function Home() {
   const services = [
     {
       title: "Teljes körű könyvelés",
+      href: "/szolgaltatasok/konyveles",
       description: "Precíz, naprakész könyvelés, kettős könyvvitel, bevallások készítése mikro- és kisvállalkozások részére.",
       icon: (
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
@@ -34,6 +36,7 @@ export default function Home() {
     },
     {
       title: "Bérszámfejtés",
+      href: "/szolgaltatasok/berszamfejtes",
       description: "Munkavállalók bérszámfejtése, TB ügyintézés, elektronikus bevallások és munkaügyi nyilvántartások vezetése.",
       icon: (
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
@@ -43,6 +46,7 @@ export default function Home() {
     },
     {
       title: "Adótanácsadás",
+      href: "/szolgaltatasok/adotanacsadas",
       description: "Személyre szabott adóoptimalizálás, tanácsadás induló és működő vállalkozások számára a hatékony működésért.",
       icon: (
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
@@ -107,15 +111,25 @@ export default function Home() {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {services.map((service, index) => (
-              <div key={index} className="group p-10 rounded-3xl bg-white border border-slate-200 shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-300">
+              <Link 
+                key={service.href} 
+                href={service.href}
+                className="group p-10 rounded-3xl bg-white border border-slate-200 shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-300 flex flex-col"
+              >
                 <div className="w-14 h-14 bg-slate-900 text-white rounded-2xl flex items-center justify-center mb-8 group-hover:bg-blue-600 transition-colors">
                   {service.icon}
                 </div>
                 <h4 className="text-2xl font-serif font-bold text-slate-900 mb-4">{service.title}</h4>
-                <p className="text-slate-600 leading-relaxed text-lg">
+                <p className="text-slate-600 leading-relaxed text-lg mb-6">
                   {service.description}
                 </p>
-              </div>
+                <div className="mt-auto flex items-center text-blue-600 font-bold text-sm uppercase tracking-wider group-hover:translate-x-2 transition-transform">
+                  Részletek 
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-4 h-4 ml-2">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+                  </svg>
+                </div>
+              </Link>
             ))}
           </div>
         </div>
@@ -153,7 +167,7 @@ export default function Home() {
                 &quot;Számomra minden ügyfél egyformán fontos. Nem csak adatokat rögzítek: a célom a vállalkozások védelme és egy olyan stabil háttér megteremtése, ahol Ön nyugodtan alhat, tudva, hogy cége pénzügyei a legjobb kezekben vannak.&quot;
               </p>
               <p>
-                A Pohánka és Társa Kft. keretein belül azért dolgozom nap mint nap, hogy szakmai tudásommal és közvetlen, támogató hozzáállásommal segítsem az Ön vállalkozásának növekedését és stabilitását.
+                A Pohánka és Társa Kft. keretein belül azért dolgozom nap mint nap, hogy szakmai tudásommal és közvetlen, támogatató hozzáállásommal segítsem az Ön vállalkozásának növekedését és stabilitását.
               </p>
             </div>
           </div>

@@ -10,6 +10,23 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'monthly',
       priority: 1,
     },
-    // Ha lesznek aloldalak (pl. /szolgaltatasok, /blog), ide kerülnek
+    {
+      url: `${baseUrl}/szolgaltatasok/konyveles`,
+      lastModified: new Date(),
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/szolgaltatasok/berszamfejtes`,
+      lastModified: new Date(),
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/szolgaltatasok/adotanacsadas`,
+      lastModified: new Date(),
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
   ]
 }
