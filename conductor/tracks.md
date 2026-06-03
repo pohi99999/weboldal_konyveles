@@ -13,8 +13,8 @@ This file tracks all major tracks for the project. Each track has its own detail
 - [x] **Track: UI/UX finomhangolás és Reszponzivitás**
   *Befejezve - Megújult aloldalak, animációk és mobil optimalizálás.*
 
-- [/] **Track: Bizalomépítés és Konverzió Optimalizálás**
-  *Folyamatban - Munkamenet, FAQ és kapcsolat oldal fejlesztése.*
+- [x] **Track: Bizalomépítés és Konverzió Optimalizálás**
+  *Befejezve - Munkamenet, FAQ és kapcsolat oldal élesítve.*
 
 - [ ] **Track: Élesítés, Domain és Deployment (Vercel)**
   *Vár kidolgozásra*
