@@ -1,13 +1,15 @@
+import Link from 'next/link';
+
 export default function Footer() {
   return (
     <footer role="contentinfo" className="w-full py-20 px-6 bg-slate-950 border-t border-white/5 mt-auto text-slate-400">
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
           <div className="md:col-span-2">
-            <div className="text-2xl font-serif font-bold text-white mb-6 flex items-center gap-2">
+            <Link href="/" className="text-2xl font-serif font-bold text-white mb-6 flex items-center gap-2">
               <span className="w-8 h-8 bg-white text-slate-900 rounded flex items-center justify-center text-sm font-sans">P</span>
               Pohánka és Társa Kft.
-            </div>
+            </Link>
             <p className="max-w-sm leading-relaxed">
               Profi könyvelési szolgáltatások és adótanácsadás KKV-k részére. Megbízhatóság, szakértelem és személyes odafigyelés.
             </p>
@@ -15,10 +17,10 @@ export default function Footer() {
           <div>
             <h4 className="text-white font-bold mb-6 uppercase text-xs tracking-widest">Navigáció</h4>
             <ul className="space-y-4">
-              <li><a href="#" className="hover:text-white transition-colors">Kezdőlap</a></li>
-              <li><a href="#services" className="hover:text-white transition-colors">Szolgáltatások</a></li>
-              <li><a href="#about" className="hover:text-white transition-colors">Rólunk</a></li>
-              <li><a href="#contact" className="hover:text-white transition-colors">Kapcsolat</a></li>
+              <li><Link href="/" className="hover:text-white transition-colors">Kezdőlap</Link></li>
+              <li><Link href="/#services" className="hover:text-white transition-colors">Szolgáltatások</Link></li>
+              <li><Link href="/#about" className="hover:text-white transition-colors">Rólunk</Link></li>
+              <li><Link href="/#contact" className="hover:text-white transition-colors">Kapcsolat</Link></li>
             </ul>
           </div>
           <div>
