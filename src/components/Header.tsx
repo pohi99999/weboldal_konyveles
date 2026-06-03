@@ -10,7 +10,6 @@ export default function Header() {
     <header role="banner" className="fixed top-0 left-0 right-0 z-50 w-full py-4 px-6 border-b border-slate-200/50 bg-white/70 dark:bg-slate-900/70 backdrop-blur-md text-slate-900 dark:text-slate-100 transition-all">
       <div className="max-w-7xl mx-auto flex justify-between items-center">
         <Link href="/" className="text-xl font-serif font-bold tracking-tight text-slate-900 dark:text-white flex items-center gap-2">
-          <span className="w-8 h-8 bg-slate-900 dark:bg-white text-white dark:text-slate-900 rounded flex items-center justify-center text-sm font-sans">P</span>
           Pohánka és Társa Kft.
         </Link>
         

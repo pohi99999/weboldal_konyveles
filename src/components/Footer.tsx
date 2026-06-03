@@ -7,13 +7,13 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
           <div className="md:col-span-2">
             <Link href="/" className="text-2xl font-serif font-bold text-white mb-6 flex items-center gap-2">
-              <span className="w-8 h-8 bg-white text-slate-900 rounded flex items-center justify-center text-sm font-sans">P</span>
               Pohánka és Társa Kft.
             </Link>
             <p className="max-w-sm leading-relaxed">
               Profi könyvelési szolgáltatások és adótanácsadás KKV-k részére. Megbízhatóság, szakértelem és személyes odafigyelés.
             </p>
           </div>
+
           <div>
             <h4 className="text-white font-bold mb-6 uppercase text-xs tracking-widest">Navigáció</h4>
             <ul className="space-y-4">
@@ -50,7 +50,7 @@ export default function Footer() {
         </div>
         <div className="pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4 text-xs font-bold uppercase tracking-widest text-slate-500">
           <p>© {new Date().getFullYear()} Pohánka és Társa Kft. Minden jog fenntartva.</p>
-          <p>Készítette: <span className="text-slate-300">Pohánka József Péter</span></p>
+          <p>Készítette: <a href="https://www.pohankaestarsa.com/" className="text-slate-300 hover:text-blue-400 transition-colors">pohankaestarsa.com</a></p>
         </div>
       </div>
     </footer>
