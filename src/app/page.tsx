@@ -1,5 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import WorkProcess from '@/components/WorkProcess';
+import FAQ from '@/components/FAQ';
 
 export default function Home() {
   const jsonLd = {
@@ -59,6 +61,7 @@ export default function Home() {
   return (
     <div className="flex flex-col flex-1 w-full pt-16">
       <script
+        key="json-ld-home"
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
@@ -135,6 +138,8 @@ export default function Home() {
         </div>
       </section>
 
+      <WorkProcess />
+
       {/* About Section */}
       <section id="about" className="w-full py-32 px-6 bg-white overflow-hidden">
         <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-20">
@@ -173,6 +178,8 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <FAQ />
 
       {/* Contact Section */}
       <section id="contact" className="w-full py-32 px-6 bg-slate-900 relative">
@@ -241,6 +248,11 @@ export default function Home() {
                 className="px-6 py-4 rounded-2xl bg-white/5 border border-white/10 focus:border-blue-500 focus:outline-none focus:ring-1 focus:ring-blue-500 text-white transition-all resize-none"
                 placeholder="Miben segíthetünk?"
               ></textarea>
+            </div>
+
+            <div className="flex items-center gap-3 p-4 bg-white/5 rounded-2xl border border-white/10">
+              <input type="checkbox" id="callback" name="callback" className="w-5 h-5 rounded border-white/20 bg-white/5 text-blue-600 focus:ring-blue-500" />
+              <label htmlFor="callback" className="text-sm font-medium text-slate-300 cursor-pointer select-none">Visszahívást kérek a megadott telefonszámon</label>
             </div>
             
             <button 

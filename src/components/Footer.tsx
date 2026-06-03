@@ -20,7 +20,7 @@ export default function Footer() {
               <li><Link href="/" className="hover:text-white transition-colors">Kezdőlap</Link></li>
               <li><Link href="/#services" className="hover:text-white transition-colors">Szolgáltatások</Link></li>
               <li><Link href="/#about" className="hover:text-white transition-colors">Rólunk</Link></li>
-              <li><Link href="/#contact" className="hover:text-white transition-colors">Kapcsolat</Link></li>
+              <li><Link href="/kapcsolat" className="hover:text-white transition-colors">Kapcsolat</Link></li>
             </ul>
           </div>
           <div>

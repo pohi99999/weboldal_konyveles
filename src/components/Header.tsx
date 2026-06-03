@@ -15,10 +15,10 @@ export default function Header() {
         
         {/* Desktop Navigation */}
         <nav className="hidden md:block">
-          <ul className="flex gap-8 text-sm font-medium">
+          <ul className="flex gap-8 text-sm font-medium items-center">
             <li><Link href="/#services" className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Szolgáltatások</Link></li>
             <li><Link href="/#about" className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Rólunk</Link></li>
-            <li><Link href="/#contact" className="bg-slate-900 dark:bg-white text-white dark:text-slate-900 px-5 py-2 rounded-full hover:bg-slate-800 dark:hover:bg-slate-200 transition-all shadow-sm">Kapcsolat</Link></li>
+            <li><Link href="/kapcsolat" className="bg-slate-900 dark:bg-white text-white dark:text-slate-900 px-5 py-2.5 rounded-full hover:bg-slate-800 dark:hover:bg-slate-200 transition-all shadow-sm">Kapcsolat</Link></li>
           </ul>
         </nav>
 
@@ -62,7 +62,7 @@ export default function Header() {
             </li>
             <li>
               <Link 
-                href="/#contact" 
+                href="/kapcsolat" 
                 className="block py-3 px-6 bg-slate-900 dark:bg-white text-white dark:text-slate-900 rounded-xl text-center"
                 onClick={() => setIsMenuOpen(false)}
               >
