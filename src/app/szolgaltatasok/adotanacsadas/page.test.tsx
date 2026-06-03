@@ -9,7 +9,7 @@ beforeAll(() => {
     unobserve = vi.fn()
     disconnect = vi.fn()
   }
-  global.IntersectionObserver = MockIntersectionObserver as any
+  global.IntersectionObserver = MockIntersectionObserver as unknown as typeof IntersectionObserver
 })
 
 afterEach(() => {

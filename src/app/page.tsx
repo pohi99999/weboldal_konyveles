@@ -110,7 +110,7 @@ export default function Home() {
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {services.map((service, index) => (
+            {services.map((service) => (
               <Link 
                 key={service.href} 
                 href={service.href}
