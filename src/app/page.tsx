@@ -102,7 +102,7 @@ export default function Home() {
               <h3 className="text-3xl md:text-5xl font-serif font-bold text-slate-900">Átfogó megoldások az Ön cégének</h3>
             </div>
             <p className="text-slate-500 text-lg max-w-md italic border-l-2 border-blue-600 pl-6">
-              "A számok világa nálunk transzparens és érthető marad minden ügyfelünk számára."
+              &quot;A számok világa nálunk transzparens és érthető marad minden ügyfelünk számára.&quot;
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -150,7 +150,7 @@ export default function Home() {
                 Több mint két évtizede nem csupán számokkal, hanem sorsokkal és vállalkozásokkal foglalkozom. Regisztrált mérlegképes könyvelőként pályafutásom alatt több száz cégnek – a legkisebb egyéni vállalkozóktól a nagyobb társaságokig – segítettem megtalálni a biztonságot a pénzügyekben.
               </p>
               <p className="p-8 bg-slate-50 rounded-2xl border-l-4 border-blue-600 font-medium italic text-slate-800">
-                "Számomra minden ügyfél egyformán fontos. Nem csak adatokat rögzítek: a célom a vállalkozások védelme és egy olyan stabil háttér megteremtése, ahol Ön nyugodtan alhat, tudva, hogy cége pénzügyei a legjobb kezekben vannak."
+                &quot;Számomra minden ügyfél egyformán fontos. Nem csak adatokat rögzítek: a célom a vállalkozások védelme és egy olyan stabil háttér megteremtése, ahol Ön nyugodtan alhat, tudva, hogy cége pénzügyei a legjobb kezekben vannak.&quot;
               </p>
               <p>
                 A Pohánka és Társa Kft. keretein belül azért dolgozom nap mint nap, hogy szakmai tudásommal és közvetlen, támogató hozzáállásommal segítsem az Ön vállalkozásának növekedését és stabilitását.

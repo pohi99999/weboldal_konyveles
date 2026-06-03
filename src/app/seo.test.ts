@@ -18,8 +18,9 @@ test('Layout metadata has correct default values', () => {
 })
 
 test('Layout metadata includes OpenGraph configuration', () => {
-  // This is expected to fail initially as it's not implemented yet
-  expect(layoutMetadata.openGraph).toBeDefined()
-  expect(layoutMetadata.openGraph?.type).toBe('website')
-  expect(layoutMetadata.openGraph?.locale).toBe('hu_HU')
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const og = layoutMetadata.openGraph as any;
+  expect(og).toBeDefined()
+  expect(og?.type).toBe('website')
+  expect(og?.locale).toBe('hu_HU')
 })

@@ -10,9 +10,9 @@ afterEach(() => {
 // Mock Next.js Image component
 vi.mock('next/image', () => ({
   __esModule: true,
-  default: (props: any) => {
+  default: ({ fill, priority, ...props }: { fill?: boolean; priority?: boolean; src: string; alt: string; className?: string; sizes?: string }) => {
     // eslint-disable-next-line @next/next/no-img-element
-    return <img {...props} fill={props.fill ? "true" : undefined} priority={props.priority ? "true" : undefined} />
+    return <img {...props} alt={props.alt || ""} data-fill={fill ? "true" : undefined} data-priority={priority ? "true" : undefined} />
   },
 }))
 
