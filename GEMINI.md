@@ -15,7 +15,10 @@ A Pohánka és Társa Kft. jelenlegi weboldala (pohankaestarsa.com) elsősorban 
 - Az MVP (Minimum Viable Product) UI elkészült és modernizálva lett (2026-os design trendek: Calm Authority, Glassmorphism).
 - A profilkép beillesztésre került és a tartalom személyesebbé, emberközelibbé vált.
 - A SEO és Teljesítmény optimalizálás track befejeződött (Metadata API, OpenGraph, Sitemap, Robots.txt, JSON-LD).
-- Valós elérhetőségi adatok integrálva.
+- Többoldalas SEO struktúra kialakítva (dedikált szolgáltatás aloldalak).
+- **Deployment:** Az oldal automatikusan élesedik a Vercel-en a GitHub tárolóból.
+  - **GitHub:** `https://github.com/pohi99999/weboldal_konyveles.git`
+  - **URL:** `https://weboldal-konyveles.vercel.app/`
 - A kód 100%-ban átment a teszteken.
 
 ## Fejlesztési Irányelvek
