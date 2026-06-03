@@ -10,8 +10,8 @@ This file tracks all major tracks for the project. Each track has its own detail
 - [x] **Track: SEO és Teljesítmény optimalizálás**
   *Link: [./tracks/seo_performance_20260602/](./tracks/seo_performance_20260602/)*
 
-- [/] **Track: UI/UX finomhangolás és Reszponzivitás**
-  *Folyamatban - Brainstorming szakasz*
+- [x] **Track: UI/UX finomhangolás és Reszponzivitás**
+  *Befejezve - Megújult aloldalak, animációk és mobil optimalizálás.*
 
-- [ ] **Track: Élesítés, Domain és Deployment (Vercel)**
-  *Vár kidolgozásra*
+- [/] **Track: Élesítés, Domain és Deployment (Vercel)**
+  *Folyamatban - Végső audit és élesítés.*

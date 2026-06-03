@@ -16,6 +16,7 @@ A Pohánka és Társa Kft. jelenlegi weboldala (pohankaestarsa.com) elsősorban 
 - A profilkép beillesztésre került és a tartalom személyesebbé, emberközelibbé vált.
 - A SEO és Teljesítmény optimalizálás track befejeződött (Metadata API, OpenGraph, Sitemap, Robots.txt, JSON-LD).
 - Többoldalas SEO struktúra kialakítva (dedikált szolgáltatás aloldalak).
+- A UI/UX finomhangolás, Animációk és Mobil-első reszponzivitás track befejeződött (Framer Motion, újrahasznosítható komponensek).
 - **Deployment:** Az oldal automatikusan élesedik a Vercel-en a GitHub tárolóból.
   - **GitHub:** `https://github.com/pohi99999/weboldal_konyveles.git`
   - **URL:** `https://weboldal-konyveles.vercel.app/`
@@ -29,7 +30,7 @@ A Pohánka és Társa Kft. jelenlegi weboldala (pohankaestarsa.com) elsősorban 
 ## Befejezett Trackek
 1. **Weboldal alapstruktúra és MVP felépítése** (2026.06.01)
 2. **SEO és Teljesítmény optimalizálás** (2026.06.02)
+3. **UI/UX finomhangolás és Reszponzivitás** (2026.06.03)
 
 ## Jövőbeli tervek (Következő Trackek)
-1. UI/UX finomhangolás, Animációk és Mobil-első reszponzivitás ellenőrzése.
-2. Vercel deployment, Domain beállítás és élesítés (Production).
+1. Élesítés, Domain beállítás és végső tesztelés (Production).
