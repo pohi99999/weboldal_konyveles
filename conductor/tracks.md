@@ -16,5 +16,8 @@ This file tracks all major tracks for the project. Each track has its own detail
 - [x] **Track: Bizalomépítés és Konverzió Optimalizálás**
   *Befejezve - Munkamenet, FAQ és kapcsolat oldal élesítve.*
 
+- [x] **Track: Egyedi Karakter és Prémium Polír**
+  *Link: [./tracks/unique_polish_20260604/](./tracks/unique_polish_20260604/)*
+
 - [ ] **Track: Élesítés, Domain és Deployment (Vercel)**
   *Vár kidolgozásra*

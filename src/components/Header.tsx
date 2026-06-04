@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
+import ThemeToggle from './ThemeToggle';
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -18,6 +19,7 @@ export default function Header() {
           <ul className="flex gap-8 text-sm font-medium items-center">
             <li><Link href="/#services" className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Szolgáltatások</Link></li>
             <li><Link href="/#about" className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Rólunk</Link></li>
+            <li><ThemeToggle /></li>
             <li><Link href="/kapcsolat" className="bg-slate-900 dark:bg-white text-white dark:text-slate-900 px-5 py-2.5 rounded-full hover:bg-slate-800 dark:hover:bg-slate-200 transition-all shadow-sm">Kapcsolat</Link></li>
           </ul>
         </nav>

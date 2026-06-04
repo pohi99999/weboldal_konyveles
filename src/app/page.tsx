@@ -2,6 +2,9 @@ import Image from 'next/image';
 import Link from 'next/link';
 import WorkProcess from '@/components/WorkProcess';
 import FAQ from '@/components/FAQ';
+import Signature from '@/components/Signature';
+import ServiceWizard from '@/components/ServiceWizard';
+import TrustTips from '@/components/TrustTips';
 
 export default function Home() {
   const jsonLd = {
@@ -100,45 +103,94 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Services Section */}
-      <section id="services" className="w-full py-24 px-6 bg-slate-50">
+      {/* Services Section - Bento Grid Layout */}
+      <section id="services" className="w-full py-32 px-6 bg-slate-50 overflow-hidden">
         <div className="max-w-7xl mx-auto">
-          <div className="flex flex-col md:flex-row justify-between items-end gap-6 mb-20">
+          <div className="flex flex-col md:flex-row justify-between items-end gap-10 mb-24">
             <div className="max-w-2xl">
-              <h2 className="text-sm font-bold text-blue-600 uppercase tracking-widest mb-3">Mivel foglalkozunk?</h2>
-              <h3 className="text-3xl md:text-5xl font-serif font-bold text-slate-900">Átfogó megoldások az Ön cégének</h3>
+              <h2 className="text-sm font-bold text-blue-600 uppercase tracking-[0.3em] mb-4">Szolgáltatási portfólió</h2>
+              <h3 className="text-4xl md:text-6xl font-serif font-bold text-slate-900 leading-tight">Személyre szabott pénzügyi megoldások</h3>
             </div>
-            <p className="text-slate-500 text-lg max-w-md italic border-l-2 border-blue-600 pl-6">
-              &quot;A számok világa nálunk transzparens és érthető marad minden ügyfelünk számára.&quot;
+            <div className="hidden lg:block w-px h-24 bg-slate-200 self-center mx-10" />
+            <p className="text-slate-500 text-xl max-w-sm font-light leading-relaxed">
+              Nem csak rögzítjük az adatokat: átláthatóvá tesszük vállalkozása jelenét és jövőjét.
             </p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {services.map((service) => (
-              <Link 
-                key={service.href} 
-                href={service.href}
-                className="group p-10 rounded-3xl bg-white border border-slate-200 shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-300 flex flex-col"
-              >
-                <div className="w-14 h-14 bg-slate-900 text-white rounded-2xl flex items-center justify-center mb-8 group-hover:bg-blue-600 transition-colors">
-                  {service.icon}
+
+          <div className="grid grid-cols-1 md:grid-cols-12 md:grid-rows-2 gap-6 h-auto md:h-[700px]">
+            {/* Large Card: Teljes körű könyvelés */}
+            <Link 
+              href={services[0].href}
+              className="md:col-span-7 md:row-span-2 group relative overflow-hidden rounded-[2.5rem] bg-slate-900 p-12 flex flex-col justify-between transition-all duration-500 hover:shadow-2xl hover:shadow-blue-900/20 shadow-xl border border-white/5"
+            >
+              <div className="absolute top-0 right-0 p-12 opacity-10 group-hover:scale-110 transition-transform duration-700">
+                <div className="w-64 h-64 bg-blue-500 rounded-full blur-[100px]" />
+              </div>
+              
+              <div className="relative z-10">
+                <div className="w-16 h-16 bg-blue-600 text-white rounded-2xl flex items-center justify-center mb-10 shadow-lg shadow-blue-600/20">
+                  {services[0].icon}
                 </div>
-                <h4 className="text-2xl font-serif font-bold text-slate-900 mb-4">{service.title}</h4>
-                <p className="text-slate-600 leading-relaxed text-lg mb-6">
-                  {service.description}
+                <h4 className="text-3xl md:text-5xl font-serif font-bold text-white mb-6 leading-tight">{services[0].title}</h4>
+                <p className="text-slate-300 text-xl max-w-md leading-relaxed mb-8">
+                  Precíz, naprakész könyvvitel és bevallások, hogy Ön minden pillanatban tisztán lássa cége pénzügyi helyzetét.
                 </p>
-                <div className="mt-auto flex items-center text-blue-600 font-bold text-sm uppercase tracking-wider group-hover:translate-x-2 transition-transform">
-                  Részletek 
-                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-4 h-4 ml-2">
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
-                  </svg>
+              </div>
+
+              <div className="relative z-10 flex items-center text-blue-400 font-bold text-sm uppercase tracking-widest group-hover:gap-4 transition-all">
+                Részletek és ajánlatkérés
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-5 h-5 ml-2">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+                </svg>
+              </div>
+            </Link>
+
+            {/* Small Card 1: Bérszámfejtés */}
+            <Link 
+              href={services[1].href}
+              className="md:col-span-5 group relative overflow-hidden rounded-[2.5rem] bg-white p-10 flex flex-col justify-between border border-slate-200 shadow-sm transition-all duration-500 hover:shadow-xl hover:-translate-y-1"
+            >
+              <div className="flex flex-col">
+                <div className="w-12 h-12 bg-slate-100 text-slate-900 rounded-xl flex items-center justify-center mb-6 group-hover:bg-blue-50 group-hover:text-blue-600 transition-colors">
+                  {services[1].icon}
                 </div>
-              </Link>
-            ))}
+                <h4 className="text-2xl font-serif font-bold text-slate-900 mb-4">{services[1].title}</h4>
+                <p className="text-slate-500 leading-relaxed font-medium">
+                  Zökkenőmentes bérszámfejtés és TB ügyintézés az elégedett munkavállalókért.
+                </p>
+              </div>
+              <div className="mt-8 flex items-center text-blue-600 font-bold text-xs uppercase tracking-widest opacity-0 group-hover:opacity-100 transition-opacity">
+                Ismerje meg folyamatunkat →
+              </div>
+            </Link>
+
+            {/* Small Card 2: Adótanácsadás */}
+            <Link 
+              href={services[2].href}
+              className="md:col-span-5 group relative overflow-hidden rounded-[2.5rem] bg-blue-50 p-10 flex flex-col justify-between border border-blue-100 shadow-sm transition-all duration-500 hover:shadow-xl hover:-translate-y-1"
+            >
+              <div className="flex flex-col">
+                <div className="w-12 h-12 bg-blue-600 text-white rounded-xl flex items-center justify-center mb-6 shadow-md shadow-blue-600/10">
+                  {services[2].icon}
+                </div>
+                <h4 className="text-2xl font-serif font-bold text-slate-900 mb-4">{services[2].title}</h4>
+                <p className="text-slate-600 leading-relaxed font-medium">
+                  Személyre szabott adóoptimalizálás a törvényes és hatékony működésért.
+                </p>
+              </div>
+              <div className="mt-8 flex items-center text-blue-600 font-bold text-xs uppercase tracking-widest opacity-0 group-hover:opacity-100 transition-opacity">
+                Tervezzünk együtt →
+              </div>
+            </Link>
           </div>
         </div>
       </section>
 
+      <TrustTips />
+
       <WorkProcess />
+
+      <ServiceWizard />
 
       {/* About Section */}
       <section id="about" className="w-full py-32 px-6 bg-white overflow-hidden">
@@ -174,6 +226,10 @@ export default function Home() {
               <p>
                 A Pohánka és Társa Kft. keretein belül azért dolgozom nap mint nap, hogy szakmai tudásommal és közvetlen, támogatató hozzáállásommal segítsem az Ön vállalkozásának növekedését és stabilitását.
               </p>
+              <div className="pt-8 border-t border-slate-100 flex flex-col items-start gap-4">
+                <p className="text-slate-400 text-sm font-bold uppercase tracking-widest">Szakmai hitvallásom</p>
+                <Signature />
+              </div>
             </div>
           </div>
         </div>

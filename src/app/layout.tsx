@@ -13,9 +13,11 @@ const playfair = Playfair_Display({
 });
 
 import Header from "@/components/Header";
-import Footer from "@/components/Footer";
+import Footer from '@/components/Footer';
+import ScrollToTop from '@/components/ScrollToTop';
 
 export const metadata: Metadata = {
+
   title: {
     default: "Pohánka és Társa Kft. - Könyvelés és Adótanácsadás",
     template: "%s | Pohánka és Társa Kft.",
@@ -59,6 +61,7 @@ export default function RootLayout({
           {children}
         </main>
         <Footer />
+        <ScrollToTop />
       </body>
     </html>
   );
